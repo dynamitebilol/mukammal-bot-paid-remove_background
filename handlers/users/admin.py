@@ -4,7 +4,8 @@ from aiogram import types
 
 from data.config import ADMINS
 
-from loader import *
+from loader import dp, bot
+from utils.db_api.test import db
 
 
 @dp.message_handler(text="/allusers", user_id=ADMINS)

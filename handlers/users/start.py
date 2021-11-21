@@ -2,8 +2,8 @@ import sqlite3
 from data.config import ADMINS
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
-
-from loader import *
+from utils.db_api.test import db
+from loader import dp, bot
 
 
 @dp.message_handler(CommandStart())

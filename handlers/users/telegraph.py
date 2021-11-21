@@ -1,6 +1,6 @@
 from aiogram import types
 
-from loader import *
+from loader import dp
 from utils import photo_link
 from utils import remove_background
 
