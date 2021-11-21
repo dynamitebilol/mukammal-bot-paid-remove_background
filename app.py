@@ -8,7 +8,7 @@ from utils.db_api.test import db
 async def on_startup(dispatcher):
     # Birlamchi komandalar (/star va /help)
     await set_default_commands(dispatcher)
-    await db.delete_users()
+
     # Ma'lumotlar bazasini yaratamiz:
     try:
         db.create_table_users()

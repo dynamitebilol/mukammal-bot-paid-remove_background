@@ -7,7 +7,7 @@ from data.config import ADMINS
 
 async def on_startup_notify(dp: Dispatcher):
         try:
-            await dp.bot.send_message(ADMINS, "Bot ishga tushdi")
+            await bot.send_message(chat_id=ADMINS[0], text ='Bot started')
 
         except Exception as err:
             logging.exception(err)
