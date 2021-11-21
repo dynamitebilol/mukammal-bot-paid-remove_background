@@ -3,8 +3,7 @@ from data.config import ADMINS
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
 
-from loader import dp, bot
-from loader import db
+from loader import *
 
 
 @dp.message_handler(CommandStart())

@@ -3,8 +3,8 @@ import asyncio
 from aiogram import types
 
 from data.config import ADMINS
-from loader import dp, bot
-from loader import db
+
+from loader import *
 
 
 @dp.message_handler(text="/allusers", user_id=ADMINS)
